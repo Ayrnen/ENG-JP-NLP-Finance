@@ -1,0 +1,4 @@
+Romanji generator for kanji
+- starts by only using verbs
+- Verb list is personally generated
+- romanji list stored as a separate table, maybe alongside on/kun info
