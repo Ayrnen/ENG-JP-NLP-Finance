@@ -1,12 +1,9 @@
-
 import re
 
 example = '走る'
 # Unicode representation of hiragana all through hexidecimal values 
-hiragana_pattern = '[\u3040-\u309F]'
-katakana_pattern = '[\u30A0-\u30FF]'
-
-print(x)
+hiragana_pattern = ''
+katakana_pattern = ''
 
 
 start = 0x3040
