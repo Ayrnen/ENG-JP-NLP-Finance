@@ -45,7 +45,7 @@ class AWSConnector(object):
     def s3_connection(self)
         credentials = self.get_temp_cred()
 
-        s3_client = boto3.client(
+        self.s3_client = boto3.client(
             's3',
             aws_access_key_id = credentials['AccessKeyId']
             aws_secret_access_key = credentials['SecretAccessKey']
