@@ -1,4 +1,5 @@
-from classes.config_reader import ConfigReader
+from classes.Config_Reader import ConfigReader
+from classes.Requester import Requester
 
 import requests
 
@@ -8,10 +9,10 @@ class EDGAR_RESTClient(object):
         self.headers = {'User-Agent': self.edgar_api_config['email']}
         self.cik_link = self.edgar_api_config['link']
 
-    def grab_cik(self):
-        response = requests.get(
+    def cik_mapper(self):
+        response = Requester.Request(
             self.cik_link,
-            headers = self.headers
+            self.headers
         )
 
-        print(response.status_code)
+        print(response.json())
